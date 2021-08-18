@@ -54,7 +54,7 @@ ul {
 .header {
   position: relative;
   transition: all 0.7s;
-  z-index: 9;
+  z-index: 999;
 }
 .header .wrap {
   width: 114rem;
@@ -184,6 +184,10 @@ ul {
   color: white;
   text-transform: uppercase;
 }
+.header .sidemenu nav a:hover {
+  color: #25d366;
+  text-decoration: underline;
+}
 .header .sidemenu footer {
   padding-top: 100px;
   font-size: 0.9em;
@@ -277,14 +281,12 @@ ul {
   font-size: 3rem;
   cursor: pointer;
 }
-.fa-facebook:hover {
-  color: #3b5998;
+.fa-linkedin:hover {
+  color: #0e67a8;
 }
-.fa-twitter:hover {
-  color: #1da1f2;
-}
-.fa-instagram:hover {
-  color: #fd1d1d;
+.fa-github:hover {
+  color: #171515;
+  background-color: #fff;
 }
 .fa-whatsapp:hover {
   color: #25d366;

@@ -17,6 +17,7 @@ $(document).ready(function () {
   });
 
   //click a enlace de menu y dirige hacia ahi
+
   var inicio = $("#inicio").offset().top,
     sobre = $("#sobre").offset().top,
     experiencia = $("#experiencia").offset().top,
@@ -28,9 +29,10 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: inicio + 400,
+        scrollTop: inicio - 124,
       },
-      500
+      1250,
+      "easeInOutExpo"
     );
   });
 
@@ -38,19 +40,23 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: inicio + 400,
+        scrollTop: inicio - 124,
       },
-      500
+      1250,
+      "easeInOutExpo"
     );
+
+    $(".sidemenu").removeClass("active");
   });
 
   $("#b-sobre").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: sobre,
+        scrollTop: sobre - 124,
       },
-      500
+      1250,
+      "easeInOutExpo"
     );
   });
 
@@ -58,9 +64,10 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: sobre + 200,
+        scrollTop: sobre - 124,
       },
-      500
+      1250,
+      "easeInOutExpo"
     );
   });
 
@@ -68,9 +75,10 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: experiencia,
+        scrollTop: experiencia - 124,
       },
-      500
+      1250,
+      "easeInOutExpo"
     );
   });
 
@@ -78,9 +86,10 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: experiencia + 200,
+        scrollTop: experiencia - 124,
       },
-      500
+      1250,
+      "easeInOutExpo"
     );
   });
 
@@ -88,9 +97,10 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: habilidades - 200,
+        scrollTop: habilidades - 124,
       },
-      500
+      1250,
+      "easeInOutExpo"
     );
   });
 
@@ -98,9 +108,10 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: habilidades - 200,
+        scrollTop: habilidades - 124,
       },
-      500
+      1250,
+      "easeInOutExpo"
     );
   });
 
@@ -108,9 +119,10 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: portafolio - 200,
+        scrollTop: portafolio - 124,
       },
-      500
+      1250,
+      "easeInOutExpo"
     );
   });
 
@@ -118,9 +130,10 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: portafolio - 200,
+        scrollTop: portafolio - 124,
       },
-      500
+      1250,
+      "easeInOutExpo"
     );
   });
 
@@ -149,3 +162,5 @@ $(document).ready(function () {
   });
   $("#portafolio-item").mixItup();
 });
+//efectos scroll
+$(".efect").smoove({ offset: "10%" });
