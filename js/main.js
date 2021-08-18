@@ -20,15 +20,15 @@ $(document).ready(function () {
   var inicio = $("#inicio").offset().top,
     sobre = $("#sobre").offset().top,
     experiencia = $("#experiencia").offset().top,
-    promociones = $("#promociones").offset().top,
-    ubicacion = $("#ubicacion").offset().top;
-    subir = $("#menunav").offset().top;
+    habilidades = $("#mh-skills").offset().top,
+    portafolio = $("#mh-portafolio").offset().top;
+  subir = $("#menunav").offset().top;
 
   $("#b-inicio").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: inicio - 200,
+        scrollTop: inicio + 400,
       },
       500
     );
@@ -38,7 +38,7 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: inicio - 200,
+        scrollTop: inicio + 400,
       },
       500
     );
@@ -48,7 +48,7 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: sobre + 200,
+        scrollTop: sobre,
       },
       500
     );
@@ -68,7 +68,7 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: experiencia + 200,
+        scrollTop: experiencia,
       },
       500
     );
@@ -84,21 +84,41 @@ $(document).ready(function () {
     );
   });
 
-  $("#b-promociones").on("click", function (e) {
+  $("#b-habilidades").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: promociones + 200,
+        scrollTop: habilidades - 200,
       },
       500
     );
   });
 
-  $("#b-ubicacion").on("click", function (e) {
+  $("#s-habilidades").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: ubicacion + 800,
+        scrollTop: habilidades - 200,
+      },
+      500
+    );
+  });
+
+  $("#b-portafolio").on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: portafolio - 200,
+      },
+      500
+    );
+  });
+
+  $("#s-portafolio").on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: portafolio - 200,
       },
       500
     );

@@ -412,6 +412,27 @@ ul {
   transform: translateY(0.35%);
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .mh-skills .mh-professional-skill {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .mh-professional-skills {
+    padding: 0;
+    margin: 5rem 0 0 0;
+  }
+  .mh-professional-progress {
+    margin: auto;
+  }
+  .mh-progress-circle {
+    padding: 0 0.5rem;
+  }
+  .pr-skill-name {
+    padding: 0 0.5rem;
+  }
+}
+
 .mh-progress.mh-progress-circle {
   display: inline-block;
   width: 10rem;
@@ -425,6 +446,7 @@ ul {
 }
 .pr-skill-name {
   color: #fff;
+  padding: 0 0.5rem;
 }
 .candidatos {
   position: relative;
