@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //menu resonsive
   $(".sidemenu-toggler").click(function () {
     $(".sidemenu").addClass("active");
   });
@@ -31,8 +32,7 @@ $(document).ready(function () {
       {
         scrollTop: inicio - 124,
       },
-      1250,
-      "easeInOutExpo"
+      500
     );
   });
 
@@ -42,8 +42,7 @@ $(document).ready(function () {
       {
         scrollTop: inicio - 124,
       },
-      1250,
-      "easeInOutExpo"
+      500
     );
 
     $(".sidemenu").removeClass("active");
@@ -55,8 +54,7 @@ $(document).ready(function () {
       {
         scrollTop: sobre - 124,
       },
-      1250,
-      "easeInOutExpo"
+      500
     );
   });
 
@@ -66,8 +64,7 @@ $(document).ready(function () {
       {
         scrollTop: sobre - 124,
       },
-      1250,
-      "easeInOutExpo"
+      500
     );
   });
 
@@ -77,8 +74,7 @@ $(document).ready(function () {
       {
         scrollTop: experiencia - 124,
       },
-      1250,
-      "easeInOutExpo"
+      500
     );
   });
 
@@ -88,8 +84,7 @@ $(document).ready(function () {
       {
         scrollTop: experiencia - 124,
       },
-      1250,
-      "easeInOutExpo"
+      500
     );
   });
 
@@ -99,8 +94,7 @@ $(document).ready(function () {
       {
         scrollTop: habilidades - 124,
       },
-      1250,
-      "easeInOutExpo"
+      500
     );
   });
 
@@ -110,8 +104,7 @@ $(document).ready(function () {
       {
         scrollTop: habilidades - 124,
       },
-      1250,
-      "easeInOutExpo"
+      500
     );
   });
 
@@ -121,8 +114,7 @@ $(document).ready(function () {
       {
         scrollTop: portafolio - 124,
       },
-      1250,
-      "easeInOutExpo"
+      500
     );
   });
 
@@ -132,8 +124,7 @@ $(document).ready(function () {
       {
         scrollTop: portafolio - 124,
       },
-      1250,
-      "easeInOutExpo"
+      500
     );
   });
 
@@ -162,5 +153,4 @@ $(document).ready(function () {
   });
   $("#portafolio-item").mixItup();
 });
-//efectos scroll
-$(".efect").smoove({ offset: "10%" });
+// $(".efect").smoove({ offset: "30%" });
