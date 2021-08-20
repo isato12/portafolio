@@ -24,7 +24,6 @@ $(document).ready(function () {
     experiencia = $("#experiencia").offset().top,
     habilidades = $("#mh-skills").offset().top,
     portafolio = $("#mh-portafolio").offset().top;
-  subir = $("#menunav").offset().top;
 
   $("#b-inicio").on("click", function (e) {
     e.preventDefault();
@@ -153,4 +152,3 @@ $(document).ready(function () {
   });
   $("#portafolio-item").mixItup();
 });
-// $(".efect").smoove({ offset: "30%" });
