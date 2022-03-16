@@ -1,3 +1,5 @@
+/** @format */
+
 $(document).ready(function () {
   //menu resonsive
   $(".sidemenu-toggler").click(function () {
@@ -19,114 +21,126 @@ $(document).ready(function () {
 
   //click a enlace de menu y dirige hacia ahi
 
-  var inicio = $("#inicio").offset().top,
-    sobre = $("#sobre").offset().top,
-    experiencia = $("#experiencia").offset().top,
-    habilidades = $("#mh-skills").offset().top,
-    portafolio = $("#mh-portafolio").offset().top;
+  let inicio = $("#inicio").offset().top;
+  let sobre = $("#sobre").offset().top;
+  let experiencia = $("#experiencia").offset().top;
+  let habilidades = $("#skills").offset().top;
+  let portafolio = $("#portafolio").offset().top;
 
-  $("#b-inicio").on("click", function (e) {
+  $("#a_inicio").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
         scrollTop: inicio - 124,
       },
-      500
+      500,
     );
   });
 
-  $("#s-inicio").on("click", function (e) {
+  $("#s_inicio").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
         scrollTop: inicio - 124,
       },
-      500
+      500,
     );
-
     $(".sidemenu").removeClass("active");
   });
 
-  $("#b-sobre").on("click", function (e) {
+  $("#a_sobre").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
         scrollTop: sobre - 124,
       },
-      500
+      500,
     );
   });
 
-  $("#s-sobre").on("click", function (e) {
+  $("#s_sobre").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
         scrollTop: sobre - 124,
       },
-      500
+      500,
     );
+    $(".sidemenu").removeClass("active");
   });
 
-  $("#b-experiencia").on("click", function (e) {
+  $("#a_experiencia").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
         scrollTop: experiencia - 124,
       },
-      500
+      500,
     );
   });
 
-  $("#s-experiencia").on("click", function (e) {
+  $("#s_experiencia").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
         scrollTop: experiencia - 124,
       },
-      500
+      500,
     );
+    $(".sidemenu").removeClass("active");
   });
 
-  $("#b-habilidades").on("click", function (e) {
+  $("#a_habilidades").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
         scrollTop: habilidades - 124,
       },
-      500
+      500,
     );
   });
 
-  $("#s-habilidades").on("click", function (e) {
+  $("#s_habilidades").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
         scrollTop: habilidades - 124,
       },
-      500
+      500,
     );
+    $(".sidemenu").removeClass("active");
   });
 
-  $("#b-portafolio").on("click", function (e) {
+  $("#a_portafolio").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
         scrollTop: portafolio - 124,
       },
-      500
+      500,
     );
   });
 
-  $("#s-portafolio").on("click", function (e) {
+  $("#s_portafolio").on("click", function (e) {
     e.preventDefault();
     $("html, body").animate(
       {
         scrollTop: portafolio - 124,
       },
-      500
+      500,
     );
+    $(".sidemenu").removeClass("active");
   });
 
+  $("#upAll").on("click", function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: inicio - 200,
+      },
+      500,
+    );
+  });
   //efecto al menu del portafolio
   $(window).on("load", function () {
     var $container = $(".portafolioContainer");
@@ -150,5 +164,5 @@ $(document).ready(function () {
       return false;
     });
   });
-  $("#portafolio-item").mixItup();
+  $("#portafolio-item").mixItUp();
 });

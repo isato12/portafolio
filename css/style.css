@@ -1,7 +1,10 @@
+/** @format */
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -96,6 +99,7 @@ ul {
   padding: 1rem;
   display: block;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .header .menu a:hover {
   color: #b6f5e1;
@@ -184,6 +188,7 @@ ul {
   font-size: 1.3rem;
   color: white;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .header .sidemenu nav a:hover {
   color: #25d366;
@@ -196,7 +201,7 @@ ul {
 }
 
 /*--------------*/
-/*footer-menu*/
+/*footer-menu-social*/
 /*---------------*/
 .header .sidemenu footer .social {
   display: flex;
@@ -291,6 +296,18 @@ ul {
 }
 .fa-whatsapp:hover {
   color: #25d366;
+}
+.fa-angle-up {
+  font-size: 25px;
+  border: 2px solid white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  line-height: 40px;
+}
+
+.fa-angle-up:hover {
+  color: #b6f;
 }
 ::-webkit-scrollbar {
   width: 1rem;
@@ -522,9 +539,14 @@ ul {
   float: none;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .portafolio-nav ul li {
+    margin: 0 10px;
+  }
+}
 .portafolio-nav ul li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 5px 10px;
   cursor: pointer;
   color: #fff;
   text-transform: capitalize;
@@ -534,7 +556,7 @@ ul {
   color: #b6f;
 }
 .portafolio-nav ul li span {
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 0 0;
   border-bottom: 2px solid transparent;
 }
 
