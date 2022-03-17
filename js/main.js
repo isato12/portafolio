@@ -1,6 +1,8 @@
 /** @format */
 
 $(document).ready(function () {
+  // efectos scroll
+  $(".efect").smoove({ offset: "40%" });
   //menu resonsive
   $(".sidemenu-toggler").click(function () {
     $(".sidemenu").addClass("active");
