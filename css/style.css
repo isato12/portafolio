@@ -71,11 +71,11 @@ ul {
 .header.sticky {
   width: 100%;
   position: fixed;
-  background-color: rgba(186, 102, 255, 0.856);
+  background-color: rgba(186, 102, 255, 0.8);
   background-image: linear-gradient(
     315deg,
-    rgb(107, 84, 126) 0%,
-    rgb(76, 41, 105) 74%
+    rgba(107, 84, 126, 0.8) 0%,
+    rgba(76, 41, 105, 0.8) 74%
   );
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.35);
 }
@@ -361,6 +361,11 @@ ul {
   border: none;
   border-radius: 5rem;
   font-size: 1.8rem;
+}
+.btn-danger:hover, .btn-danger:active {
+  background-color: #b6f;
+  border-color: none;
+  color: #fff;
 }
 
 /*--------------*/
@@ -690,4 +695,58 @@ figure:hover figcaption {
 }
 .footer .social-icons li {
   margin: auto;
+}
+
+/* contacto */
+.contact{
+  margin: 5rem 0;
+  color: #fff;
+  padding: 5rem 0;
+}
+.form {
+  max-inline-size: 550px;
+  margin: auto;
+}
+.form label {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: .5em;
+  padding-inline-start: .5em;
+}
+
+.form label span {
+  color: #b6f;
+}
+
+.form input,
+.form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  padding: .8em;
+  border-radius: .5em;
+  border: 2px solid transparent; 
+  border-image: linear-gradient(to bottom, rgb(218, 173, 255) 0%, #b6f 74%) 1; 
+  color: #b6f;
+  background-color: transparent;
+}
+
+.form textarea {
+  margin-block-end: 2em;
+  font-family: inherit;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom, rgb(218, 173, 255) 0%, #b6f 74%) 1;
+}
+
+input::-webkit-input-placeholder {
+  color: #b6f;
+}
+
+
+.contact {
+  margin-block-end: 5em;
+}
+
+#enlace {
+  opacity: 0;
 }
